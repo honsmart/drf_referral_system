@@ -28,10 +28,4 @@ class ReferralsHistory(models.Model):
     reffered_by = models.CharField(max_length=225)
     amount= models.PositiveIntegerField(default=0)
     date = models.DateField(default=timezone.now)
-    status = models.CharField(max_length=15, choices=STATUS_CHOICES, default='')
-     
-
-
-
-
-     
+    status = models.CharField(max_length=15, choices=STATUS_CHOICES, default='')    
